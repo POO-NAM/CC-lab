@@ -1,0 +1,11 @@
+{
+    "name": "Linux Development Environment",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu", // Use an Ubuntu base image
+    "features": {
+        "docker-in-docker": "latest" // Optional feature for Docker support
+    },
+    "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash" // Use Bash shell
+    },
+    "postCreateCommand": "sudo apt-get update && sudo apt-get install -y build-essential" // Install common tools
+}
